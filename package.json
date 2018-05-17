@@ -1,8 +1,12 @@
 {
   "name": "deswrap",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "main": "dist/index.js",
-  "git repository": "https://github.com/Pomelo1213/deswrap",
+  "repository": {
+    "type": "github",
+    "url": "https://github.com/Pomelo1213/deswrap.git"
+  },
+  "keywords": ["des", "version"],
   "scripts": {
     "clean": "gulp clean",
     "build": "gulp build",
