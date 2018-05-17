@@ -1,11 +1,15 @@
 import dd from 'ddeyes'
 import 'shelljs/make'
-import des from '../src'
+import {encryptByDES, decryptByDES} from '../src'
 
 target.all = =>
   dd 'Hello World!!!'
 
-target.des = =>
-  data = des 'hello', '123123'
+target.enc = =>
+  data = encryptByDES 'hello', '123123'
   dd data
  
+target.dec = =>
+  enc = encryptByDES 'hello', '123123'
+  data = decryptByDES enc, '123123'
+  dd data
